@@ -46,7 +46,7 @@ li{
 color: white;
 font-family: courier;
 color: white;
-font-size: 25px;
+font-size: 20px;
 text-align: center;
 font-family: h1;
 margin-top: 20px;
@@ -126,7 +126,7 @@ a:hover{
 /* HEADER DROP DOWN */
 
 .dropbtn {
-  font-size: 25px;
+  font-size: 20px;
   border: none;
 }
 
@@ -189,9 +189,9 @@ color: white;
 #mainContent img{
   /* min-width: 150px; */
   max-width: 100%;
-    border-radius: 10px;
+  border-radius: 10px;
 }
-#mainContent img:hover, #mainContentArchive img:hover{
+#mainContent img:hover, #mainContentArchive img:hover, #mainContentIssues img:hover{
 transform: rotate(1deg) scale(1.08);;
   }
   #mainContent {
@@ -215,10 +215,14 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 grid-gap: 35px;
 margin: 10px auto;
-width: 90%;
+width: 70%;
 height: auto;
 }
 #mainContentArchive img{
+  /* min-width: 150px; */
+  max-width: 100%;
+}
+#mainContentIssues img{
   /* min-width: 150px; */
   max-width: 100%;
 }
@@ -236,6 +240,11 @@ grid-template-columns: 1fr 1fr 1fr;
 @media (max-width: 700px) {
 #mainContent, #mainContentArchive {
 grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 700px) {
+#mainContentIssues {
+grid-template-columns: 1fr;
 }
 }
 /* @media (max-width: 700px) {
