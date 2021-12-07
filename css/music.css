@@ -1,0 +1,103 @@
+@font-face {
+  src: url(../fonts/Exo-Regular.otf);
+  font-family: h1;
+}
+@font-face {
+  src: url(../fonts/Exo-Light.otf);
+  font-family: h2;
+}
+@font-face {
+  src: url(../fonts/Exo-Light-Italic.otf);
+  font-family: h3;
+}
+body {
+  background-color: black;
+  background-image: url(../img/stars.png);
+  background-repeat: repeat;
+}
+ul#navi li {
+  display: inline;
+}
+ul {
+  font-size: 20pt;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: red;
+}
+.header img{
+  width: 300px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.head h1{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: h1;
+  margin-top: 20px;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: h1;
+}
+h2 {
+  color: white;
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+  font-family: h2;
+}
+h3 {
+  color: white;
+  font-size: 12px;
+  /* position: fixed; */
+  margin: 0px 10px 0px 00px;
+  font-family: h3;
+}
+li {
+  margin: 50px;
+  font-family: h1;
+}
+ul{
+  margin-left: 25px;
+  border-radius: 1px;
+    border: 0.5px solid rgba(0, 0, 200, .3);
+  padding: 10px;
+  list-style-type: none;
+}
+
+img:hover{
+
+  transform: scale(1.05);
+}
+img{
+  margin-top: 10px;
+  width: 135px;
+}
+.container {
+  margin-left: 15%;
+width: 200px;
+display: flex;
+justify-content: center;
+}
+.Mixes {
+  margin-left: 15%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.Singles {
+width: 200px;
+}
+/* .Container {
+  display: flex;
+  justify-content: center;
+} */

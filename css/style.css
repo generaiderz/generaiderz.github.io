@@ -1,0 +1,258 @@
+@font-face {
+  src: url(../fonts/Exo-Regular.otf);
+  font-family: h1;
+}
+@font-face {
+  src: url(../fonts/Exo-Light.otf);
+  font-family: h2;
+}
+@font-face {
+  src: url(../fonts/Exo-Light-Italic.otf);
+  font-family: h3;
+}
+@font-face {
+  src: url(../fonts/yoster.ttf);
+  font-family: yoster;
+}
+p{
+  color: white;
+  font-family: h1;
+  text-align: center;
+}
+body {
+  background-color: black;
+  background-image: url(../img/stars.png);
+  background-repeat: repeat;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+ul#navi li {
+  display: inline;
+  margin: 20px;
+  font-family: yoster;
+  text-shadow: 0px 0px 10px white;
+}
+ul {
+  font-size: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+li{
+color: white;
+font-family: courier;
+color: white;
+font-size: 25px;
+text-align: center;
+font-family: h1;
+margin-top: 20px;
+}
+ h1{
+  /* color: #2498dd; */
+  color: white;
+  /* text-shadow: 2px 1px 10px white, 0px 0px 20px white; */
+  font-size: 27px;
+  font-family: h1;
+  text-align: center;
+}
+h2 {
+  color: white;
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+  font-family: h2;
+}
+#navi a{
+  text-decoration: none;
+  color: white;
+}
+ul.archiveHead li{
+  padding: 20px;
+  font-size: 20px;
+  display: inline;
+}
+.archiveHead a{
+  color:  white;
+  font-family: h1;
+  text-align: center;
+}
+.archiveHilite a{
+  color: red;
+}
+a{
+  color:red;
+  text-decoration: none;
+}
+#navi a:hover{
+  text-decoration: none;
+  color: red;
+}
+a:hover{
+  color: red;
+}
+
+
+/* LOGO */
+
+.header img{
+  width: 400px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ARCHIVE PAGE IMGS */
+
+.issues{
+  display: flex;
+  justify-content: center;
+}
+.issues img{
+  width: 300px;
+  margin: 10px;
+}
+.issues img:hover{
+        cursor: pointer;
+      transform: rotate(-1deg) scale(1.08);
+    }
+
+
+
+/* HEADER DROP DOWN */
+
+.dropbtn {
+  font-size: 25px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: black;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+
+}
+button{
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  font-family: yoster;
+  text-shadow: 0px 0px 10px white;
+}
+button:hover{
+  color: red;
+  cursor: pointer;
+}
+.dropdown-content a {
+
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {color: red;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.album-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* MAIN CONTENT FOR ARCHIVE PAGES */
+
+#mainContent h1{
+
+}
+#mainContent p {
+  font-size: 15px;
+text-align: center;
+font-family: h1;
+color: white;
+}
+#mainContent h3 {
+  color: white;
+  font-size: 20px;
+  margin: 0px 10px -10px 0px;
+  font-family: h3;
+  text-align: center;
+}
+#mainContent img{
+  /* min-width: 150px; */
+  max-width: 100%;
+    border-radius: 10px;
+}
+#mainContent img:hover, #mainContentArchive img:hover{
+transform: rotate(1deg) scale(1.08);;
+  }
+  #mainContent {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 35px;
+margin: 10px auto;
+width: 90%;
+height: auto;
+}
+#mainContentArchive {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 35px;
+margin: 10px auto;
+width: 90%;
+height: auto;
+}
+#mainContentArchive img{
+  /* min-width: 150px; */
+  max-width: 100%;
+}
+@media (max-width: 1200px) {
+  #mainContent {
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+@media (max-width: 950px) {
+  #mainContent {
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 700px) {
+#mainContent {
+grid-template-columns: 1fr 1fr;
+}
+}
+/* @media (max-width: 700px) {
+#mainContentArchive {
+grid-template-columns: 1fr;
+}
+} */
+/* SLIDESHOW HOMEPAGE */
+#slideshow img{
+  width: 400px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+/* #slideshow img:hover{
+  transform: rotate(-1deg) scale(1.08);
+} */
+#slideshow {
+  margin: 0px auto;
+  position: relative;
+  width: 400px;
+  height: 240px;
+  padding: 10px;
+
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  right: 0px;
+  bottom: 0px;
+}
